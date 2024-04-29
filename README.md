@@ -23,29 +23,11 @@ To run this project, ensure you have the following dependencies installed:
 git clone https://github.com/rmurray1/BrokerExExtended.git
 ```
 
-2. Install dependencies:
-
-```
-npm install
-```
-
-3. [Additional installation steps...]
-
-## Usage
-
-1. Start the application:
-
-```
-npm start
-```
-
-2. Open your web browser and navigate to `http://localhost:3000` to view the application.
-
-3. [Instructions for using the drop-down menu to select encryption hashes...]
+2. [Instructions for using the drop-down menu to select encryption hashes...]
 
 ## Contributing
 
-Contributions are welcome! Please follow these steps to contribute:
+Contributions are welcome! Especially Mr. AA.
 
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix.
