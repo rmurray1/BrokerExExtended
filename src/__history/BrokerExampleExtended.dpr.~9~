@@ -1,0 +1,33 @@
+program BrokerExampleExtended;
+
+uses
+  Forms,
+  fBrokerExample in 'fBrokerExample.pas' {frmBrokerExample},
+  SplVista,
+  Vcl.Themes,
+  Vcl.Styles,
+  VWHash in 'VWHash.pas',
+  WsockcH in 'WsockcH.pas',
+  RpcbErrH in 'RpcbErrH.pas',
+  CCOWRPCBrokerH in 'CCOWRPCBrokerH.pas',
+  SelDivH in 'SelDivH.pas' {SelDivForm},
+  frmSignonMessageH in 'frmSignonMessageH.pas' {frmSignonMsg},
+  LoginfrmH in 'LoginfrmH.pas' {frmSignon},
+  VCEditH in 'VCEditH.pas' {frmVCEdit};
+
+// include to display Vista splash
+
+{$R *.RES}
+
+begin
+  //TStyleManager.TrySetStyle('Windows10');
+  //TStyleManager.TrySetStyle('Windows');
+  Application.CreateForm(TfrmBrokerExample, frmBrokerExample);
+  Application.CreateForm(TSelDivForm, SelDivForm);
+  Application.CreateForm(TfrmSignonMsg, frmSignonMsg);
+  Application.CreateForm(TfrmSignon, frmSignon);
+  Application.CreateForm(TfrmVCEdit, frmVCEdit);
+  SplashOpen;                                    // display splash screen
+  SplashClose(3000);                             // min splash time 3 seconds, then close
+  Application.Run;
+end.
