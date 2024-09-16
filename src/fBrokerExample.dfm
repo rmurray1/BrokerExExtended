@@ -55,6 +55,17 @@ object frmBrokerExample: TfrmBrokerExample
       AutoSize = False
       Caption = 'SSH Username:'
     end
+    object Label1: TLabel
+      Left = 295
+      Top = 91
+      Width = 38
+      Height = 16
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
+      Caption = 'Hash:'
+    end
     object btnConnect: TButton
       Left = 354
       Top = 12
@@ -133,6 +144,19 @@ object frmBrokerExample: TfrmBrokerExample
       Text = 'xxxVISTA'
       OnChange = edtServerChange
     end
+    object cbHash: TComboBox
+      Left = 344
+      Top = 88
+      Width = 122
+      Height = 24
+      Margins.Left = 4
+      Margins.Top = 4
+      Margins.Right = 4
+      Margins.Bottom = 4
+      TabOrder = 6
+      Text = 'cbHash'
+      OnChange = cbHashChange
+    end
   end
   object PageControl1: TPageControl
     Left = 8
@@ -156,17 +180,6 @@ object frmBrokerExample: TfrmBrokerExample
         Width = 93
         Height = 16
         Caption = 'Echoed string:'
-      end
-      object Label1: TLabel
-        Left = 8
-        Top = 213
-        Width = 38
-        Height = 16
-        Margins.Left = 4
-        Margins.Top = 4
-        Margins.Right = 4
-        Margins.Bottom = 4
-        Caption = 'Hash:'
       end
       object edtStrOrig: TEdit
         Left = 8
@@ -224,19 +237,6 @@ object frmBrokerExample: TfrmBrokerExample
         ParentFont = False
         ReadOnly = True
         TabOrder = 3
-      end
-      object cbHash: TComboBox
-        Left = 8
-        Top = 233
-        Width = 193
-        Height = 24
-        Margins.Left = 4
-        Margins.Top = 4
-        Margins.Right = 4
-        Margins.Bottom = 4
-        TabOrder = 4
-        Text = 'cbHash'
-        OnChange = cbHashChange
       end
     end
     object TabSheet3: TTabSheet
