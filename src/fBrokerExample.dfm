@@ -74,7 +74,7 @@ object frmBrokerExample: TfrmBrokerExample
       ParentShowHint = False
       ShowHint = True
       TabOrder = 1
-      Text = '9200'
+      Text = '9302'
       OnChange = edtServerChange
     end
     object edtServer: TEdit
@@ -86,7 +86,7 @@ object frmBrokerExample: TfrmBrokerExample
       ParentShowHint = False
       ShowHint = True
       TabOrder = 0
-      Text = 'BROKERSERVER'
+      Text = 'ehr1.opensourcevista.net'
       OnChange = edtServerChange
     end
     object BitBtn1: TBitBtn

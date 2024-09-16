@@ -97,7 +97,7 @@ interface
 uses
   SysUtils,Forms, StdCtrls,Graphics, Dialogs, WinTypes, UITypes,
   Controls, Classes, ExtCtrls, TrpcbH, XWBut1, MFunStr, Menus, WinProcs,
-  RpcConf1, Spin, ComCtrls, fVistAAbout, Buttons,
+  RpcConf1, Spin, ComCtrls, fVistAAbout, Buttons, VWHash,
   ActiveX, ActnList, OleCtrls, VERGENCECONTEXTORLib_TLB, //CCOWRPCBroker,
   System.Actions;
 
@@ -294,6 +294,7 @@ procedure TfrmBrokerExample.btnConnectClick(Sender: TObject);
 begin
   if btnConnect.Caption = '&Connect' then
   begin   //connect
+    setCipherPad(fHash);
     RpcBroker1.DebugMode := actDebugMode.Checked;
     rgArrayType.Enabled := True;
     // ***********************  CCOW User Context  ****************************
